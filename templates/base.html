@@ -1,0 +1,29 @@
+<!__templates/base.html __>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Django blog</title>
+</head>
+<body>
+<header>
+    <h1><a href="{% url 'home' %}">Django blog</a></h1>
+    <link href="https://fonts.googleapies.com/css?family=Source+Sans+pro:400"
+       rel="stylesheet">
+</header>
+<div>
+    {% block content %}
+    {% endblock content %}
+</div>
+</body>
+</html>
+
+
+<!__templates/base.html __>
+{% load static %}
+<html>
+ <head>
+     <title>Django blog</title>
+     <link rel="stylesheet" href="{% static 'css/base.css' %}">
+   </head>
+</html>
